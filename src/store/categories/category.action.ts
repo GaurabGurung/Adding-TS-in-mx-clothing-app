@@ -24,7 +24,7 @@ export const fetchCategoriesStart = (): FetchCategoriesStart =>
 
 export type CategoryAction =
   | FetchCategoriesStart
-  | FetchCategoriesStart
+  | FetchCategoriesSuccess
   | FetchCategoriesFailed;
 
 //Above is the Union Type for Category Actions
