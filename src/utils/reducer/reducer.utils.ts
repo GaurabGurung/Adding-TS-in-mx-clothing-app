@@ -1,13 +1,16 @@
 import { AnyAction } from "redux";
 
-type Human = {
-  name: string;
-  goal: boolean;
-};
+// type Human = {
+//   name: string;
+//   goal: boolean;
+// };
 
-type MyFunc = () => Human;
+// type MyFunc = () => Human;
 
-type Species = ReturnType<MyFunc>;
+// type Species = {
+//   type: ReturnType<MyFunc>['type'];
+
+// }
 
 type Matchable<AC extends () => AnyAction> = AC & {
   type: ReturnType<AC>["type"];
