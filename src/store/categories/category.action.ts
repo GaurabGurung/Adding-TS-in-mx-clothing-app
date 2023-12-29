@@ -25,12 +25,7 @@ export const fetchCategoriesStart = withMatcher(
     createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START)
 );
 
-export type CategoryAction =
-  | FetchCategoriesStart
-  | FetchCategoriesSuccess
-  | FetchCategoriesFailed;
-
-//Above is the Union Type for Category Actions
+fetchCategoriesStart.match;
 
 export const fetchCategoriesSuccess = withMatcher(
   (categoriesArray: Category[]): FetchCategoriesSuccess =>
