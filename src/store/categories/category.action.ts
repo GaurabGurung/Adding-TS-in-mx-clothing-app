@@ -25,8 +25,6 @@ export const fetchCategoriesStart = withMatcher(
     createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START)
 );
 
-fetchCategoriesStart.match;
-
 export const fetchCategoriesSuccess = withMatcher(
   (categoriesArray: Category[]): FetchCategoriesSuccess =>
     createAction(
